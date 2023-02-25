@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #111827;
+    padding: 15px 25px;
+}
+.ham{
+    display: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: end;
+}
+li{
+    list-style: none;
+    color: white;
+}
+.home{
+    color:white;
+    background-color: #6464E0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+section{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+}
+p{
+    color: white;
+}
+.heading, ul{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+section img{
+    width: 100%;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+   border-radius: 5px;
+   height: 10px;
+   background-color: #0000FF;
+   border-width: 0;
+   width: 95%;
+   margin: auto;
+}
+.social{
+    margin-top: 20px;
+}
+.social img{
+    width: 30px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pc{
+    width: 35%;
+}
+.hand{
+    width: 40px;
+}
+.middle p{
+    display: inline;
+    font-size: 40px;
+}
+.middle h1{
+    font-size: 60px;
+    color: white;
+}
+.middle h2{
+    color: #C5C559;
+    font-size: 30px;
+}
+
+
+/* media query */
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+    .ham{
+        display: inline;
+    }
+    .ham img{
+        width: 25px;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3vw;
+    }
+    
+    .hand{
+        width: 7vw;
+    }
+    .middle p, .middle h2{
+        font-size: 4vw;
+    }
+    .middle h1{
+        font-size: 6vw;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project img{
+        width: 50vw;
+    }
+    .heading h2{
+        font-size: 6vw;
+    }
+    .social img{
+        width: 5vw;
+    }
+}
